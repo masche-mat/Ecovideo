@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: #007f5f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header img {
+  width: 150px;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px; /*saca el padding que tenga*/
+  position: absolute;
+  text-align: right;
+  margin: 0px 0px 0px 100px;
+}
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+.header__menu li {
+  margin: 10px 0px; /*top-bottom, left-rigth*/
+}
+.header__menu li:hover {
+  text-decoration: underline;
+}
+
+.header__menu--perfil {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu--perfil img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.main {
+  height: 200px;
+  background: linear-gradient(#007f5f, #55a630);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__title {
+  margin-top: 80px;
+  color: white;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  padding: 0px 20px;
+  height: 50px;
+  width: 70%;
+  outline: none;
+}
+::placeholder {
+  color: white;
+}
+
+.carrusel {
+  background: linear-gradient(#55a630, #aacc00);
+  overflow: none;
+  padding: 30px;
+  position: relative;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+  /*con este :: se quita la barra que hace scrol a las img*/
+}
+.carrusel__title {
+  color: white;
+}
+.carrusel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carrusel-item {
+  background-color: royalblue;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  /*especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque, con hidden: El contenido es recortado y no se muestran barras de posición.
+    scroll*/
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carrusel-item:hover ~ .carrusel-item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carrusel__container:hover .carrusel-item {
+  opacity: 0.3;
+}
+
+.carrusel__container:hover .carrusel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.carrusel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  /*indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video>, debería redimensionarse para ajustarse a su contenedor.*/
+}
+
+.carrusel-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 13px;
+  color: white;
+  opacity: 1;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carrusel-item__details img {
+  width: 30px;
+}
+
+.carrusel-item__details p {
+  margin: 0px;
+}
+
+.footer {
+  background: linear-gradient(#aacc00, #d4d700);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

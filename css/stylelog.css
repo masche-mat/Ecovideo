@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #55a630;
+  color: white;
+}
+header img {
+  width: 150px;
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 60px 68px 40px;
+  min-height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.container__title {
+  font-size: 25px;
+}
+.container__form {
+  display: flex;
+  flex-direction: column;
+}
+.container__form input {
+  background: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+  color: white;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.container__remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.container__remember input {
+  height: 13px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+}
+.register a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.register a:hover {
+  text-decoration: underline;
+}
