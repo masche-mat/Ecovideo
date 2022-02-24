@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylelog.css" />
 
-    <title>Ecovideo</title>
+    <title>EcoVideo</title>
   </head>
   <body>
     <header>
@@ -25,33 +31,18 @@
     </header>
 
     <section class="main">
-      <h2 class="main__title">Tu perfil de la cuenta</h2>
+      <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+      <input
+        type="text"
+        placeholder="Buscar por genero, nombre.."
+        id="buscador"
+      />
     </section>
 
     <section class="carrusel">
-      <section class="login__container">
-        <section class="container">
-          <h1 class="container__title">Perfil</h1>
-          <form id="formIngreso" action="" class="container__form">
-            <label for="usuario">Nombre de usuario</label>
-            <input type="text" id="" />
+      <h2 class="carrusel__title">Te recomendamos ver</h2>
 
-            <label for="text">Fecha de nacimiento</label>
-            <input type="text" id="" />
-
-            <label for="text">Ciudad</label>
-            <input type="text" id="" />
-
-            <label for="text">Preferencias</label>
-            <input type="text" id="" />
-
-            <button>Guardar</button>
-          </form>
-          <div id="enlace">
-            <a href="home.html">Volver al inicio</a>
-          </div>
-        </section>
-      </section>
+      <div class="carrusel__container" id="containerMovies"></div>
     </section>
 
     <footer class="footer">
@@ -59,7 +50,7 @@
       <a href="/">Declaración de Privacidad</a>
       <a href="/">Centro de Ayuda</a>
     </footer>
-
+    <script src="js/script.js"></script>
     <script src="js/user.js"></script>
   </body>
 </html>

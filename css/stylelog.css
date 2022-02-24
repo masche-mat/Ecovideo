@@ -81,3 +81,11 @@ button {
 .register a:hover {
   text-decoration: underline;
 }
+
+#enlace a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+#enlace a:hover {
+  text-decoration: underline;
+}
